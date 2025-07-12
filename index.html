@@ -1,16 +1,79 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abigail S. Varela</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
 </head>
-
 <body>
-  Hello world
-  <script src="script.js"></script>
-</body>
 
+<nav class="navbar navbar-dark fixed-top position-relative custom-navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="images/logo.png" alt="Logo" width="40" height="40">
+    </a>
+
+    <div class="d-flex align-items-center">
+      <i class="bi bi-search text-white fs-4 me-3" style="cursor: pointer;" onclick="toggleSearch()"></i>
+      <i class="bi bi-list fs-1" style="cursor: pointer;" onclick="openSideMenu()"></i>
+    </div>
+
+    <div class="search-container" id="searchBar">
+      <input type="text" placeholder="Search...">
+    </div>
+  </div>
+</nav>
+
+<div id="sideMenu" class="side-menu">
+  <a href="javascript:void(0)" class="close-btn" onclick="closeSideMenu()">&times;</a>
+  <a class="nav-link" href="#about">About Me</a>
+  <a class="nav-link" href="#contact">Contact Info</a>
+  <a class="nav-link" href="#">Education</a>
+  <a class="nav-link" href="#">Experience</a>
+  <a class="nav-link" href="#">Projects</a>
+  <a class="nav-link" href="#">Skills</a>
+  <a class="nav-link" href="#">Volunteering</a>
+</div>
+
+<div class="intro">
+  <div>
+    <h1>Abigail S. Varela</h1>
+    <p>Welcome to my website!<br>Click or scroll around to get to know me.</p>
+  </div>
+</div>
+
+<section id="about" class="about-section">
+  <div class="container">
+    <h2 class="about-me text-center">About Me</h2>
+    <div class="about-flex">
+      <div class="image-container">
+        <img src="images/profilepic.jpg" class="profilepic"/>
+      </div>
+      <div class="text-container">
+        <p>
+          My name is Abigail Varela. I’m a rising senior at Ernest McBride High School and I’m 17 years old.
+            This is my first time ever coding and I’m very excited to see where it leads me.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="contact" class="contact-section text-center">
+  <div class="container">
+    <h2>Stay Connected</h2>
+    <p><strong>Mobile Number:</strong> (562) 336-6796</p>
+    <p><strong>Email:</strong> abigailsvarela@gmail.com</p>
+    <p><strong>School:</strong> Ernest McBride Sr. High School</p>
+    <p><strong>Address:</strong> California Ave, Bellflower, CA 90706</p>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
 </html>

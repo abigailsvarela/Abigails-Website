@@ -1,4 +1,148 @@
-html {
-  height: 100%;
+body {
+  background: linear-gradient(to bottom,
+      #fef08a 0%,
+      #fef08a 30%,
+      darkblue 100%);
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.custom-navbar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #bdbfbe;
+}
+
+.custom-navbar .bi-search,
+.custom-navbar .bi-list {
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+}
+
+.custom-navbar .bi-search:hover,
+.custom-navbar .bi-list:hover {
+  color: #fef08a;
+}
+
+.navbar-brand img {
+  height: 80px;
+  width: 80px;
+}
+
+.nav-link {
+  color: white;
+}
+
+.intro {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-section,
+.contact-section {
+  margin-top: 100px;
+  padding: 60px 20px;
+}
+
+.profilepic {
   width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+#searchBar {
+  display: none;
+}
+
+.search-container {
+  position: absolute;
+  right: 70px;
+  top: 12px;
+  width: 200px;
+}
+
+.search-container input {
+  width: 150px;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.side-menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.4s;
+  padding-top: 60px;
+  z-index: 1050;
+}
+
+.side-menu a {
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+}
+
+.side-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+.side-menu .close-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 30px;
+  text-decoration: none;
+  color: black;
+}
+
+.contact-section {
+  color: white;
+}
+
+.about-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: nowrap;
+}
+
+.image-container {
+  flex: 0 0 auto;
+}
+
+.profilepic {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.text-container {
+  flex: 1;
+  color: white;
+}
+
+.about-me{
+  margin-bottom: 50px;
+  font-size: 3rem;
+  color: grey;
+  margin-bottom: 50px;
+}
+
+.text-container p{
+  font-size: 1.2rem;
+  color: lightgray;
 }
